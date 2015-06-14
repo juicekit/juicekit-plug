@@ -10,7 +10,7 @@
     "type": "library",
     "license": "Apache",
     "require": {
-        "juicekit/http": "dev-master"
+        "juicekit/http": ">=0.1"
     },
     "authors": [
         {
