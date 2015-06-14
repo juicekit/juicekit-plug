@@ -31,12 +31,6 @@ class HttpInterceptor
 
     function __construct($mapping)
     {
-        $mapping = array(
-            'filter_map' => array(),
-            'filters' => array(
-                'ProtectedResources' => 'ProtectedResourceClass'
-            )
-        );
         $this->mapping = $mapping;
     }
 
@@ -56,7 +50,7 @@ class HttpInterceptor
             }
             foreach ($paths as $path) {
                 if (preg_match('(^' . $path . '$)', $uri)) {
-                    $filterName = $this->mapping['filters'][$filter];
+                    $filterName = $this->mapping['filter'][$filter];
 
                     /** @var $plug FilterInterFace */
                     $plug = null;
