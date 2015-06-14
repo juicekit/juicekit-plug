@@ -1,0 +1,21 @@
+{
+    "name": "juicekit/plug",
+    "autoload": {
+        "psr-0": {
+            "JuiceKit\\Plug\\": "src"
+        }
+    },
+    "description": "Lightweight HTTP request interceptor",
+    "homepage": "https://juicekit.io/plug",
+    "type": "library",
+    "license": "Apache",
+    "require": {
+        "juicekit/http": "dev-master"
+    },
+    "authors": [
+        {
+            "name": "Yoel Nunez",
+            "email": "dev@nunez.guru"
+        }
+    ]
+}
